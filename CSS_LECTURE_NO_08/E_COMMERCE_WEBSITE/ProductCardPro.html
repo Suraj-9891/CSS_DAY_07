@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="product-card1">
+        <!-- Product Image Section -->
+        <div class="product-image1">
+            <img src="product.jpg" alt="Product Name" id="product-img1">
+            <div class="lightbox1" id="lightbox1">
+                <span class="close-lightbox1" onclick="closeLightbox()">×</span>
+                <img id="lightbox-img1" src="">
+            </div>
+        </div>
+        
+        <!-- Product Information Section -->
+        <div class="product-info1">
+            <h2 class="product-name">Product Name</h2>
+            <p class="product-description">A brief description of the product.</p>
+            <p class="product-price">$99.99 <span class="discount">10% OFF</span></p>
+        </div>
+        
+        <!-- Product Details Section -->
+        <div class="product-details1">
+            <h3>Specifications</h3>
+            <ul>
+                <li>Size: Medium</li>
+                <li>Color: Red</li>
+                <li>Material: Cotton</li>
+            </ul>
+            <h3>Features & Benefits</h3>
+            <p>High-quality, durable, and eco-friendly material.</p>
+        </div>
+        
+        <!-- Call-to-Action Buttons -->
+        <div class="cta-buttons">
+            <button class="btn add-to-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+            <button class="btn wishlist">Add to Wishlist</button>
+        </div>
+        
+        <!-- Ratings and Reviews -->
+        <div class="ratings-reviews1">
+            <div class="average-rating1">⭐ 4.5</div>
+            <p>Based on 120 customer reviews.</p>
+        </div>
+        
+        <!-- Additional Features -->
+        <div class="additional-features">
+            <a href="#" class="category-link">Category > Subcategory</a>
+            <div class="social-share">
+                <button class="btn share">Share on Facebook</button>
+                <button class="btn share">Share on Twitter</button>
+            </div>
+            <p class="availability">In Stock</p>
+            <div class="trust-badges">
+                <img src="secure-payment.png" alt="Secure Payment">
+                <img src="trusted-brand.png" alt="Trusted Brand">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

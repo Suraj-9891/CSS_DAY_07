@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- How to link external CSS file with htmlfile -->
+<link rel="stylesheet" href="Selector.CSS">
+
+
+<body>
+ <!-- What is the CSS.
+1. CSS is stand for the Cascading style sheet
+2. How the part of design the website.
+3. apperence.
+4. formating.
+5. styling.
+6. formating.
+
+
+What is the Selector in CSS
+-- The selector is used for the is a way select an elements.
+
+1.Simple Selector
+    (i) Element Selector/type selector/ tag selector.
+    (ii) Class Selector
+    (iii) ID Selector
+2. Pseudo-Class Selector
+3. Multiple Selector
+
+1. element Selector/type selector/tag selector
+-- CSS can select HTMl element by using an element's tag name. A tag name is the word(or character between HTML angle brackets.  -->
+
+
+<h1>This is my first heading</h1>
+<h2>This is mysecond heading</h2>
+
+<p>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis provident sunt? Dolores aut eos, natus nemo quis adipisci nobis. Doloremque non molestiae quam distinctio omnis quas ipsam accusamus fugit!</span>
+    <span>Pariatur, eos expedita ducimus debitis aspernatur ratione at minus nisi unde magni fuga autem, dolorum, cumque animi. Odio eaque explicabo officiis praesentium optio sunt architecto quisquam asperiores, modi illum eveniet?</span>
+    <span>Est quidem voluptatum deserunt sunt, distinctio harum ab optio quae repellendus aperiam a. Magnam ut aut eaque. Consequuntur cum iure tempore praesentium tempora doloremque, quo minima, facere eius repellat exercitationem?</span>
+    <span>Sapiente sed explicabo officiis iste eos unde corrupti aperiam. Voluptatum facilis nobis asperiores, dolor consectetur natus fuga, laboriosam enim velit nam odit repudiandae? Quasi dolore enim facilis, rem vero eaque.</span>
+    <span>Minus veritatis quos pariatur. Voluptatem magni odio itaque iure quo tempore esse quia dignissimos tenetur amet labore necessitatibus dolore rerum at, cum culpa. Fugit, laborum veniam dolor officia ab rem.</span>
+    <span>Aut, qui dolor? Itaque omnis fuga laudantium incidunt quaerat ullam deserunt nulla modi debitis libero aut quo dicta quis quidem nostrum, nam reiciendis exercitationem. Cumque eius velit libero harum voluptates?</span>
+    <span>Tempora iste error tempore, deserunt nemo libero, deleniti omnis sint culpa soluta accusamus, minima quos rem molestias ad! Vitae quos eius eos minima accusantium, nobis debitis accusamus? Tempora, perspiciatis nulla?</span>
+    <span>Architecto dolor, laudantium saepe voluptate accusamus sequi fugit est, explicabo nulla ipsam odio. Fugit, unde, nulla corrupti dignissimos eligendi officiis et similique consectetur ipsa voluptatum a accusantium qui placeat excepturi!</span>
+    <span>Aut animi debitis excepturi maiores ad architecto optio dolor illo! Ex assumenda eos reprehenderit corporis asperiores autem distinctio dolorem modi doloribus dolorum, provident, voluptatibus quaerat. Adipisci doloribus laudantium corporis corrupti.</span>
+    <span>Minima nisi doloribus, placeat dicta assumenda dolorem optio odit saepe possimus amet nulla laudantium ipsam totam voluptatem ullam ratione? Odit ab nobis quidem hic. Aliquid porro similique ratione autem ex!</span>
+    <span>Suscipit asperiores sint, nostrum eaque quaerat officiis ullam placeat a facere quae accusamus hic, perspiciatis quasi similique sequi maxime! Aut, est ipsum eius amet maxime id similique veniam atque aliquam.</span>
+    <span>Repellat excepturi laudantium beatae earum nisi iusto iure voluptas sint. Voluptatem repellendus a est maiores deleniti excepturi ipsum sint illo eius, omnis accusantium animi, libero quasi. Placeat quos cupiditate perferendis.</span>
+    <span>Esse sunt odio, velit similique minus accusantium aut quibusdam voluptates voluptatum quo culpa doloribus repellat commodi nobis nihil animi atque aliquam, laudantium, sit doloremque! Impedit odio amet eos illo voluptas.</span>
+    <span>Sit unde delectus culpa atque facilis nemo quas dolorem corporis deleniti, a quasi, amet libero? Magnam debitis, cum mollitia consequatur recusandae aut! Eaque illo consequatur necessitatibus aliquam, tenetur optio temporibus?</span>
+    <span>Odit ut, incidunt aperiam exercitationem iure totam necessitatibus est, molestias consequatur temporibus cumque voluptas. Numquam dolore fugit corrupti natus cumque perspiciatis aperiam voluptatum, quam commodi expedita exercitationem aliquid eligendi totam?</span>
+    <span>Sint distinctio repellat aspernatur nisi qui vero, atque commodi fuga fugit, ex nemo, et error non veritatis quas. Sequi ut quas quam id iste illo pariatur perferendis mollitia odio quis!</span>
+    <span>Sed, ab? Corrupti maiores recusandae quos rerum aperiam possimus magni veniam libero odit eius. Natus, cumque magnam? Fuga fugiat dicta optio, obcaecati sequi veniam animi maiores voluptatibus. Obcaecati, at odit.</span>
+    <span>Voluptatem architecto modi placeat, maiores, sed ipsam nam quis repellendus ad, fuga necessitatibus animi culpa excepturi eligendi? Soluta esse commodi corporis, iste explicabo deserunt aliquam. Doloribus tenetur eum quia quasi!</span>
+    <span>Vel ratione non labore nihil quia, optio porro accusantium sint iusto ab, error laboriosam eius! Obcaecati ratione sint nihil assumenda numquam placeat ex! Error animi ut quia nam tempore excepturi.</span>
+    <span>Obcaecati, accusantium doloribus ullam nesciunt provident veniam. Eos facilis nobis sint quaerat iure nisi minima? Iusto recusandae consectetur, consequuntur, animi officiis id, soluta amet voluptates odit iste voluptatum expedita sed.</span>
+</p>
+
+
+<!-- # Class Selector.?
+-- CSS is not limited to selecting element by tag name. HTML elements have more than just a tag name;;
+they can also have attributes. One common attributes is the class attributes its is also possible to select an element by its class attributes.
+
+-- To select HTML element by its class using CSS, a period (.) must be presended to the class name.
+
+-->
+<p class="green">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, illo enim reprehenderit itaque magni voluptatibus ut! Velit, molestias, ut a odio error sequi et dolorem suscipit dolore, hic iste amet.</span>
+    <span>Doloremque reprehenderit rem iure in illum suscipit. Perspiciatis, sequi! Voluptates fugiat sint assumenda. Reiciendis at repudiandae accusantium a? Tempore autem magnam laboriosam iusto odit quae suscipit maxime reprehenderit in tempora!</span>
+    <span>Eligendi consequuntur asperiores recusandae corporis sapiente veniam nisi libero? Ab, nesciunt repellat ipsam earum ad, magni corrupti quo officia vel quod doloribus maxime temporibus aperiam saepe. Facilis fugit deserunt non.</span>
+    <span>Quibusdam harum dolores repudiandae fugit distinctio cum quia possimus! Rem unde saepe aliquam, praesentium vero doloribus nisi aliquid repellendus voluptatem voluptate quos at, repellat eaque placeat? Nesciunt asperiores earum ratione!</span>
+    <span>Iure rem magni vel, nesciunt dolorem non! Explicabo provident neque velit veritatis, optio labore deserunt officia a, dolorem mollitia tenetur quos ea ut. Iusto porro illo fuga delectus, odio magnam.</span>
+    <span>Officia soluta laborum accusamus quae ad dolor voluptas, eum, nostrum doloremque repellendus reiciendis dignissimos sed nobis unde rem! Ipsa provident cupiditate ratione dicta odit officiis cumque quis aliquid assumenda beatae.</span>
+    <span>Minima, vel ad autem obcaecati aliquam deserunt ea quia id distinctio facilis totam dolore voluptate amet non ipsa laudantium quam temporibus consectetur ratione sapiente? Et dolores laboriosam omnis suscipit quia.</span>
+    <span>Explicabo, similique? Quibusdam autem delectus, cum placeat eos nisi debitis, beatae officia corrupti hic deleniti dicta labore ea et optio alias architecto laborum non tempora perferendis iusto, reprehenderit repudiandae nihil?</span>
+    <span>Architecto consequuntur enim in cupiditate mollitia velit sequi dolore iure saepe. Ratione repudiandae a accusamus! Libero, voluptate adipisci consectetur praesentium reprehenderit enim magni eum qui nihil beatae quibusdam quod quia?</span>
+    <span>Voluptate explicabo, porro, adipisci animi tenetur ipsa est consectetur, similique amet impedit sint iure inventore voluptatem! Dolores, ipsam. Sapiente nostrum ullam ab dolorem, hic earum pariatur totam temporibus dolor eligendi?</span>
+    <span>Vero nobis placeat vitae molestias consequatur eos dolores tempora dignissimos cum cupiditate quas, laboriosam sint a aperiam dicta eius. Velit adipisci eum, blanditiis odio voluptatem doloremque eaque sed natus fugit.</span>
+    <span>Qui numquam optio officia assumenda deleniti corrupti itaque nostrum at vel error explicabo nisi magni provident doloribus expedita ducimus, architecto, beatae pariatur velit, quia veniam sint et? Molestias, est rerum!</span>
+    <span>Id sunt qui quidem in tenetur eum autem. Architecto earum praesentium, ratione amet dignissimos blanditiis repudiandae a eligendi minima fuga molestias at quis facere ducimus eveniet molestiae quasi debitis voluptas!</span>
+    <span>Nemo animi expedita molestiae dolore dolores exercitationem asperiores necessitatibus consequuntur id, ratione magnam distinctio doloribus omnis accusamus tempora at corporis itaque eius maiores iste ipsum quos quibusdam. Enim, qui sunt.</span>
+    <span>Modi consequatur, pariatur obcaecati distinctio cupiditate quia debitis voluptates quos ipsam. Ad incidunt recusandae velit vero facilis commodi. Suscipit fuga nesciunt quos expedita, consectetur sunt magni nobis temporibus est ratione.</span>
+    <span>Eaque quisquam omnis vitae dicta maiores corporis accusantium ipsa sequi doloremque explicabo amet eum, ad maxime laborum illo praesentium cum laboriosam fugit rem possimus aliquid id expedita sapiente. Distinctio, ad.</span>
+    <span>Eos accusamus repellendus aspernatur facilis, illo, aliquam laborum deserunt inventore dolorum repudiandae deleniti dolores magnam non ratione. Nihil corporis modi maxime consequuntur, quas quos eum tenetur et facilis recusandae quis.</span>
+    <span>Voluptate, maiores sit, placeat eligendi at, esse ex suscipit molestias fuga quasi sed tempore reprehenderit! Beatae voluptatibus in commodi. Deserunt, libero autem rerum quod exercitationem eius consequuntur. Soluta, dicta sint!</span>
+    <span>Porro nihil iure repellendus maxime illo laborum sequi libero culpa provident ut nobis iste facere voluptatibus dolorum sit ipsum hic assumenda repudiandae at eius cum dignissimos, quaerat impedit delectus. Hic?</span>
+    <span>Corrupti sint a ex expedita laborum optio soluta officia itaque recusandae quas. Ratione temporibus in dignissimos obcaecati totam recusandae itaque commodi dolore aliquam soluta, cum, ipsa aliquid quae amet beatae.</span>
+</p>
+
+<p class="yellow">
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, dicta quam deleniti porro atque numquam, labore velit quidem minus blanditiis molestiae corporis tenetur ea ipsum delectus doloremque maxime? Ipsam, voluptatum!</span>
+    <span>Minus itaque inventore amet harum nulla quibusdam nesciunt! Unde reiciendis nobis sed odio, sunt fugit nulla aperiam illo cumque incidunt excepturi molestias vel iure maiores, ipsum dolore ea? Dolore, eaque.</span>
+    <span>Quam reiciendis aliquam qui praesentium aut dolores blanditiis officiis inventore corrupti. Doloremque similique minus aspernatur quo amet voluptatibus incidunt labore, voluptas alias quaerat veniam eligendi, saepe vitae iusto error. Iusto.</span>
+    <span>Obcaecati incidunt atque quo, quia ab eaque officiis blanditiis accusantium quisquam eum hic aperiam dolorum, dignissimos iure repellendus? Beatae quae totam eaque alias suscipit deserunt laborum officiis molestiae omnis accusantium.</span>
+    <span>Porro doloremque nihil dolorem sint nulla ea quaerat sapiente reprehenderit sit numquam excepturi quas consequuntur exercitationem iusto, repudiandae consectetur maxime doloribus assumenda vitae alias fugiat recusandae. Voluptates unde perferendis cumque.</span>
+    <span>Quod officia quis voluptatum optio libero consequatur odio id saepe suscipit? Dolorem laborum cumque, dolore inventore, odit in quos tenetur ducimus nam debitis ea labore iste omnis, voluptatum velit officia.</span>
+    <span>Iure reiciendis non deserunt aliquid voluptate dignissimos dolorum, similique minima aut illo dolore quod nesciunt corporis adipisci? Quisquam repellat animi officiis minima! Nisi optio maiores natus nihil laboriosam, illo ipsum!</span>
+    <span>Nam fugiat officiis atque ipsam fugit, suscipit assumenda quidem, reiciendis nulla repellat omnis similique architecto reprehenderit molestiae odit perspiciatis id velit itaque quibusdam aliquam, odio recusandae libero? Eum, omnis quidem?</span>
+    <span>Sit delectus optio eligendi, vel ab itaque cupiditate quaerat officiis autem similique cumque aliquam eum sapiente rem aperiam temporibus tempore voluptatum incidunt nemo nostrum. Magni impedit ex accusantium vitae assumenda.</span>
+    <span>Doloribus eos, quia nisi beatae ipsum, perferendis quae sit sapiente optio, enim magni? Dicta, aliquid sequi aut consectetur assumenda molestiae provident facere eos accusantium! Dolorem iure esse error cupiditate tempore.</span>
+</p>
+
+<h1 class="small">
+    <view>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum illum, cum ad laudantium repellendus nesciunt tempora beatae iste fuga, quis illo reprehenderit quia id nobis esse ratione architecto a cumque.</view>
+    <view>Unde ad repellat aspernatur reprehenderit quam odio dolorem consequatur nesciunt sint dolore aut voluptate magni alias quae quibusdam eum architecto incidunt voluptatibus magnam, corporis non. Sint iste recusandae illum voluptate?</view>
+</h1>
+
+<h2 class="small">
+    <view>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ut repudiandae dolores alias iure placeat, ex ipsa excepturi voluptatem veritatis dicta quod pariatur quos qui, saepe quidem animi magnam. Dolore.</view>
+    <view>Dolore ipsa itaque quos repellendus. Quas dolores earum accusantium ducimus consequatur delectus, eum tempore magnam provident dolor voluptate laboriosam, natus omnis ipsum minima perferendis odit consequuntur odio quod! Aliquam, quia!</view>
+</h2>
+<h3 class="small">
+    <view>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis officiis ab alias, praesentium aspernatur ducimus quisquam, molestias reiciendis ad pariatur at. Harum dicta quo earum! Deleniti perspiciatis molestiae quam dolor?</view>
+    <view>Hic dolorum qui commodi nemo nostrum expedita aperiam odio! Odio aut quas neque totam, exercitationem officia rerum impedit? Quasi quis iste ut soluta aliquam eveniet inventore maiores quo laudantium ea?</view>
+</h3>
+<h4 class="medium">
+    <view>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis dolore voluptates sint non! Cum hic rem labore corrupti minima quisquam qui quidem, architecto error, accusamus dolore nobis recusandae molestias?</view>
+    <view>Atque at delectus molestias. Est non, praesentium porro, molestias asperiores assumenda, facilis quis reiciendis iste alias quisquam expedita eligendi illum? Nisi quas cumque a? Reiciendis rerum voluptatem blanditiis iure voluptas.</view>
+</h4>
+<h5 class="medium">
+    <view>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe autem alias, laborum odit cumque reiciendis. Magni, temporibus quisquam vel cum rem, perspiciatis ratione optio sequi, voluptates impedit pariatur obcaecati animi?</view>
+    <view>Ducimus minus modi molestias officia commodi repellat ex enim rem, quisquam eos temporibus libero eius aliquam optio nam eum, beatae itaque ullam recusandae id consequuntur incidunt asperiores quasi. Debitis, qui?</view>
+</h5>
+<h6 class="medium">
+    <view>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, deserunt reiciendis? Eum architecto animi ratione ex, dolores vero, iste repellat sunt maxime error voluptas doloremque quis. Commodi quisquam officiis exercitationem.</view>
+    <view>Deserunt consequatur minus ad, quibusdam recusandae ex quia iusto facere sint exercitationem quisquam id inventore delectus eius placeat voluptate, eum excepturi reiciendis ratione. Recusandae corrupti fuga molestiae repellendus eveniet odit!</view>
+</h6>
+
+<!-- ID Selector.?
+- for situation where you need more specificity in styling. you many also selct for the element for CSS using an id attributes You can have differnt ids asccociated with a class (althrough a class is not required).
+- The id attributes can be added to an element, along with a class attributes. One the CSS side, the delinetation is made
+
+-->
+
+<p id="pink">
+    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sunt odit enim inventore, neque iure quae eos nihil, mollitia ullam eveniet praesentium accusamus, laudantium doloremque dolor. Eveniet minima similique ab!</span>
+    <span>Perferendis iste beatae possimus officiis doloremque voluptatum architecto provident repudiandae mollitia, excepturi, facere deserunt nam pariatur, blanditiis eos itaque ad maiores. Quam voluptatum repellat quisquam laborum omnis ab deserunt esse.</span>
+    <span>Illo illum consectetur quod nobis officiis animi quam omnis eum! Error unde exercitationem ducimus similique nemo ipsam, eum ipsa asperiores neque velit debitis incidunt quidem explicabo repellendus voluptatem eaque dolores?</span>
+    <span>Soluta vero quas magni alias iste nesciunt eaque illo blanditiis mollitia, dolore aliquam sapiente, dolores rerum tempora. Delectus, sit ducimus, cupiditate perferendis quam deleniti, eveniet ut ad rem odit quo!</span>
+    <span>Magnam reprehenderit rem itaque vero. Fuga accusantium qui minus vitae recusandae rerum omnis provident nam eligendi aspernatur id tempore repudiandae, nobis facilis sint ipsam adipisci iure natus porro, iusto aut!</span>
+</p>
+
+<button id="Blax">Submit</button>
+
+<a href="https://learn.codehelp.in/t/u/activeCourses" id="codehep">Go to code help</a>
+
+
+
+<!-- Multiple Selector table,tr,td,th -->
+
+<!-- Explore time
+1. Universal Selector
+2. Nested Selector
+3. Attributes Selector 
+-->
+
+
+
+
+
+
+
+
+</body>
+</html>

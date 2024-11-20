@@ -1,0 +1,64 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aqua;
+  }
+
+  
+  .container {
+    height: 800px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap-reverse; /* Ensures boxes wrap to the next row if needed */
+    gap: 3px; /* Space between boxes */
+    width: 80%;
+    justify-content: space-evenly;
+    
+  }
+  
+  .box {
+    height: 220px;
+    width: 220px;
+    flex: 1 1 calc(30% - 20px); /* Flexible width with a base calculation */
+    max-width: calc(30% - 20px); /* Ensures it doesn't exceed specified size */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid #fff; /* White border for contrast */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+  
+  /* Hover Effect */
+  .box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .box {
+      flex: 1 1 calc(45% - 20px); /* Adjust box size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box {
+      flex: 1 1 100%; /* Full-width boxes on small screens */
+    }
+  }
+  

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demo</title>
+    <style>
+        /* Simple Selectors */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .highlight {
+            color: #ff6347;
+        }
+        #intro {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Combinator Selectors */
+        div p {
+            color: #00796b;
+        }
+        ul > li {
+            color: #2e7d32;
+        }
+        p + p {
+            color: #5d4037;
+            font-style: italic;
+        }
+        p ~ p {
+            color: #1e88e5;
+        }
+
+        /* Pseudo-class Selectors */
+        a:hover {
+            color: #8e24aa;
+            text-decoration: underline;
+        }
+        li:first-child {
+            font-weight: bold;
+        }
+        input:focus {
+            border: 2px solid #f4511e;
+            outline: none;
+        }
+
+        /* Pseudo-elements Selectors */
+        p::first-line {
+            font-weight: bold;
+            color: #37474f;
+        }
+        p::before {
+            content: "🔹 ";
+            color: #0288d1;
+        }
+        p::after {
+            content: " ✅";
+            color: #388e3c;
+        }
+
+        /* Attribute Selectors */
+        [type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        [type="submit"] {
+            background-color: #0288d1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        [type="submit"]:hover {
+            background-color: #0277bd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Simple Selectors -->
+    <h1>Welcome to the CSS Selectors Demo</h1>
+    <p class="highlight">Explore various types of CSS selectors in this example.</p>
+    <p id="intro">Selectors in CSS allow you to target HTML elements and apply styles based on different criteria.</p>
+
+    <!-- Combinator Selectors -->
+    <div>
+        <p>This paragraph is within a div and styled using a combinator selector.</p>
+    </div>
+    <ul>
+        <li>First item in the list (styled with :first-child pseudo-class)</li>
+        <li>Second item in the list</li>
+        <li>Third item in the list</li>
+    </ul>
+
+    <!-- Pseudo-class Selectors -->
+    <p>Hover over the link below:</p>
+    <a href="#">This is a link with a hover effect.</a>
+
+    <!-- Pseudo-elements Selectors -->
+    <p>CSS pseudo-elements are powerful for styling specific parts of content, like the first line or adding decorative symbols.</p>
+
+    <!-- Attribute Selectors -->
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

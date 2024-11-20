@@ -1,0 +1,11 @@
+.Box{
+    background-color: aquamarine;
+    border:  1px solid black;
+    border-radius: 15px;
+    transform: translate(100px, 50px);
+    transform: rotate(-45deg);
+    margin:  200px;
+    transform: scale(2,5);
+    transform: skew(90deg);
+
+}

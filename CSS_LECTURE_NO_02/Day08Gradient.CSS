@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    /* font-family: Arial, sans-serif; */
+}
+
+.container {
+    display: flex;
+    gap: 1cm; /* 1cm gap between boxes */
+    position: fixed;
+    top: 90px; /* Position all boxes at the same vertical level */
+    left: 90px; /* Starting point from the left */
+    /* display: flex;
+    flex-wrap: wrap;
+    max-width: calc(5 * 150px + 4 * 1cm); /* Adjust width for 3 boxes plus gaps */
+    /* gap: px; */ 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+
+.box {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 35px;
+    display: flex;           /* Use flexbox for centering */
+    align-items: center;     /* Center text vertically */
+    justify-content: center;
+    font-weight: bold;       /* Make text bold */
+    margin: 20px auto;
+    padding:  20px;
+    background-image: linear-gradient(Pink, rgb(232, 204, 229),rgb(18, 234, 230));
+}
+.box1 {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 35px;
+    display: flex;           /* Use flexbox for centering */
+    align-items: center;     /* Center text vertically */
+    justify-content: center;
+    font-weight: bold;       /* Make text bold */
+    margin: 20px auto;
+    padding:  20px;
+    background-image: radial-gradient(rgb(248, 174, 218), rgb(91, 235, 34), rgb(161, 10, 216));
+}
+.box2 {
+    border: 2px solid black;
+    font-size: 40px;
+    text-align: center;
+    display: flex;           /* Use flexbox for centering */
+    align-items: center;     /* Center text vertically */
+    justify-content: center;
+    font-weight: bold;       /* Make text bold */
+    margin: 20px auto;
+    padding:  20px;
+    height: 200px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    border-radius: 50%;
+    
+}
+#black-id{
+    font-size: 50px;
+    border: 2px solid rgb(15, 16, 1);
+    border-radius: 15px;
+    background-color: rgb(241, 53, 241);
+}

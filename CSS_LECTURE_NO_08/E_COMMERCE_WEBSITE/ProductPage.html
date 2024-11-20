@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="ProductPage.css">
+</head>
+<body>
+    <div class="product-page">
+        <!-- STEP 1: Product Information -->
+        <section class="product-info">
+            <div class="product-images">
+                <img src="image1.jpg" alt="Product Image 1" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="image2.jpg" alt="Product Image 2">
+                    <img src="image3.jpg" alt="Product Image 3">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Product Name</h1>
+                <p class="description">This is a detailed description of the product, highlighting its key features.</p>
+                <p class="price">Price: <span>$99.99</span></p>
+                <p class="discount">Discount: <span>20% off</span></p>
+                <ul class="specifications">
+                    <li>Feature 1: High Quality</li>
+                    <li>Feature 2: Durable Material</li>
+                    <li>Feature 3: Sleek Design</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- STEP 2: Product Variations -->
+        <section class="product-variations">
+            <h2>Choose Options</h2>
+            <div class="options">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                <label for="color">Color:</label>
+                <select id="color">
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+        </section>
+
+        <!-- STEP 3: Reviews and Ratings -->
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            <p>Average Rating: ★★★★☆ (4.2/5)</p>
+            <div class="review-list">
+                <p><strong>John Doe:</strong> Great product! Highly recommend. ★★★★★</p>
+                <p><strong>Jane Smith:</strong> Good quality, but delivery was delayed. ★★★★☆</p>
+            </div>
+        </section>
+
+        <!-- STEP 4: Related Products -->
+        <section class="related-products">
+            <h2>Related Products</h2>
+            <div class="product-suggestions">
+                <div class="product">
+                    <img src="related1.jpg" alt="Related Product 1">
+                    <p>Related Product 1</p>
+                </div>
+                <div class="product">
+                    <img src="related2.jpg" alt="Related Product 2">
+                    <p>Related Product 2</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 5: Add to Cart/Checkout -->
+        <section class="add-to-cart">
+            <button class="btn add-cart">Add to Cart</button>
+            <button class="btn checkout">Checkout</button>
+        </section>
+    </div>
+</body>
+</html>

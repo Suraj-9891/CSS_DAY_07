@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    /* font-family: Arial, sans-serif; */
+}
+
+.container {
+    display: flex;
+    gap: 2cm; /* 1cm gap between boxes */
+    position: fixed;
+    top: 90px; /* Position all boxes at the same vertical level */
+    left: 65px; /* Starting point from the left */
+    /* display: flex;
+    flex-wrap: wrap;
+    max-width: calc(5 * 150px + 4 * 1cm); /* Adjust width for 3 boxes plus gaps */
+    /* gap: px; */ 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+
+.box {
+    border: 2px solid black;
+    height: 220px;
+    width: 220px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 35px;
+    display: flex;           /* Use flexbox for centering */
+    align-items: center;     /* Center text vertically */
+    justify-content: center;
+    font-weight: bold;       /* Make text bold */
+    margin: 20px auto;
+    padding:  20px;
+    background-color: antiquewhite;
+    box-shadow: -10px -10px 15px greenyellow,10px 10px 15px rgb(100, 98, 239);
+}
+.box1 {
+    border: 2px solid black;
+    height: 220px;
+    width: 220px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 35px;
+    display: flex;           /* Use flexbox for centering */
+    align-items: center;     /* Center text vertically */
+    justify-content: center;
+    font-weight: bold;       /* Make text bold */
+    margin: 20px auto;
+    padding:  20px;
+    background-color: aqua;
+    box-shadow: 0 0 0 3px rgba(148,0,211,1), 0 0 0 6px rgba(75,0,130,1), 0 0 0 9px rgba(0,0,255,1), 0 0 0 12px rgba(0,255,0,1), 0 0 0 15px rgba(255,255,0,1), 0 0 0 18px rgba(255,127,0,1), 0 0 0 21px rgba(255,0,0,1);
+}
+
+#black-id{
+    font-size: 50px;
+    border: 2px solid rgb(15, 16, 1);
+    border-radius: 15px;
+    background-color: rgb(241, 191, 53);
+}

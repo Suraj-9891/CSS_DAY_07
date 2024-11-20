@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* Step 1: Style the first box with a fixed position */
+/* Step 1: Style the first box with a fixed position */
+.box1 {
+    position: fixed;
+    top: 50px; /* Adjust vertical position as needed */
+    left: 20px; /* Adjust horizontal position as needed */
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+/* Step 2: Style the second box to be exactly 1cm to the right of the first box */
+.box2 {
+    position: fixed;
+    top: 50px; /* Matches the vertical position of .box1 */
+    left: calc(20px + 150px + 40px + 1cm); /* Position 1cm to the right of .box1 */
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">Fixed Position Box</div>
+    <div class="box2">Second Box</div>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="ProductCard.css">
+</head>
+<body>
+    <div class="shopping-cart">
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <ul class="product-list">
+                <li>
+                    <span class="product-name">Product A</span>
+                    <span class="quantity">x2</span>
+                    <span class="price">$40.00</span>
+                </li>
+                <li>
+                    <span class="product-name">Product B</span>
+                    <span class="quantity">x1</span>
+                    <span class="price">$25.00</span>
+                </li>
+            </ul>
+            <div class="totals">
+                <p>Subtotal: <span>$65.00</span></p>
+                <p>Total: <span>$65.00</span></p>
+            </div>
+        </div>
+
+        <!-- Coupon Code Entry -->
+        <div class="coupon-code">
+            <h2>Apply Coupon</h2>
+            <input type="text" placeholder="Enter promo code">
+            <button>Apply</button>
+        </div>
+
+        <!-- Shipping Estimator -->
+        <div class="shipping-estimator">
+            <h2>Estimate Shipping</h2>
+            <label for="location">Enter your location:</label>
+            <input type="text" id="location" placeholder="City, State, or ZIP">
+            <button>Calculate</button>
+        </div>
+
+        <!-- Payment Options -->
+        <div class="payment-options">
+            <h2>Payment Options</h2>
+            <label>
+                <input type="radio" name="payment-method" value="credit-card" checked> Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="paypal"> PayPal
+            </label>
+        </div>
+
+        <!-- Checkout Button -->
+        <div class="checkout">
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>

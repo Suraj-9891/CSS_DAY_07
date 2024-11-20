@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .product-images, .product-info, .reviews, .cta, .product-description, .additional-info, .related-products {
+      margin-bottom: 40px;
+    }
+
+    /* STEP 1: Product Images */
+    .product-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-image {
+      width: 100%;
+      max-width: 500px;
+      cursor: zoom-in;
+    }
+
+    .thumbnail-gallery {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .thumbnail-gallery img {
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .thumbnail-gallery img:hover {
+      border-color: #000;
+    }
+
+    /* STEP 2: Product Information */
+    .product-info {
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    .product-info h1 {
+      margin: 0;
+    }
+
+    .price {
+      color: #e74c3c;
+      font-size: 1.5em;
+    }
+
+    .product-specifications {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* STEP 3: Product Variations */
+    .product-variations {
+      margin-top: 20px;
+    }
+
+    .product-variations label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .product-variations select, .product-variations input {
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+
+    /* STEP 4: Reviews and Ratings */
+    .reviews {
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    .reviews h2 {
+      margin-bottom: 10px;
+    }
+
+    .review {
+      margin-bottom: 10px;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 5px;
+    }
+
+    .write-review textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    /* STEP 5: CTA */
+    .cta {
+      text-align: center;
+    }
+
+    .cta button {
+      padding: 10px 20px;
+      font-size: 1em;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .cta .add-to-cart {
+      background: #27ae60;
+      color: #fff;
+      border: none;
+    }
+
+    .cta .buy-now {
+      background: #e67e22;
+      color: #fff;
+      border: none;
+    }
+
+    /* STEP 6: Product Description */
+    .product-description {
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    /* STEP 7: Additional Information */
+    .additional-info {
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    /* STEP 8: Related Products */
+    .related-products {
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    .related-products .product {
+      display: inline-block;
+      width: 200px;
+      margin-right: 10px;
+      text-align: center;
+    }
+
+    .related-products img {
+      width: 100%;
+    }
+
+    #Main-Image{
+    width: 900px;
+    height: 320px;
+    border-radius: 80px;
+
+}
+
+#watch-size{
+      border-radius: 20px;
+      width: 200px;
+      height: 220px;
+    }
+
+
+#Product-size{
+  overflow-y: hidden;
+  height: 300px;
+  border-radius: 50px;
+ 
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- STEP 1: Product Images -->
+    <div class="product-images" id="Product-size">
+      <img id="Product-size" src="https://www.fastrack.in/on/demandware.static/-/Library-Sites-FastrackSharedLibrary/default/dw5b0de778/images/plp/FT_MetalSeries_PLP_D.jpg" alt="Main Product" class="main-image">
+      <div class="thumbnail-gallery">
+        <img src="https://m.media-amazon.com/images/I/61V-uzan3wL._AC_UY327_FMwebp_QL65_.jpg" alt="Thumbnail 1">
+        <img src="https://m.media-amazon.com/images/I/71FwUIz2oEL._SL1500_.jpg" alt="Thumbnail 2">
+        <img src="https://www.fastrack.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw3e7fb267/images/Fastrack/Catalog/38102PP04_1.jpg?sw=600&sh=600" alt="Thumbnail 3">
+      </div>
+    </div>
+
+    <!-- STEP 2: Product Information -->
+    <div class="product-info">
+      <h1>Product Name</h1>
+      <p class="sku">Fastrack Phantom with 4.69 CM Super HD Display Functional Crown BT Calling Premium Black Solar Metal Smartwatch for Unisex</p>
+      <p class="price">₹ 3,995.00</p>
+      <p class="product-specifications">Features: Lightweight, Durable, Compact.</p>
+    </div>
+
+    <!-- STEP 3: Product Variations -->
+    <div class="product-variations">
+      <label for="size">Size:</label>
+      <select id="size">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+      </select>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" value="1">
+    </div>
+
+    <!-- STEP 4: Reviews and Ratings -->
+    <div class="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="review">⭐️⭐️⭐️⭐️ - Great product!</div>
+      <form class="write-review">
+        <label for="review">Write a Review:</label>
+        <textarea id="review" rows="4"></textarea>
+      </form>
+    </div>
+
+    <!-- STEP 5: Call-to-Action -->
+    <div class="cta">
+      <button class="add-to-cart">Add to Cart</button>
+      <button class="buy-now">Buy Now</button>
+    </div>
+
+    <!-- STEP 6: Product Description -->
+    <div class="product-description">
+      <h2>Product Description</h2>
+      <p>Detailed product information, features, and benefits.</p>
+    </div>
+
+    <!-- STEP 7: Additional Information -->
+    <div class="additional-info">
+      <h2>Additional Information</h2>
+      <p>Shipping: Free delivery on orders over ₹ 50.</p>
+      <p>Return Policy: 30-day money-back guarantee.</p>
+    </div>
+
+    <!-- STEP 8: Related Products -->
+    <div class="related-products">
+      <h2>Related Products</h2>
+      <div class="product">
+        <img id="watch-size" src="https://m.media-amazon.com/images/I/61V-uzan3wL._AC_UY327_FMwebp_QL65_.jpg" alt="Related Product 1">
+        <p>Related Product 1</p>
+      </div>
+      <div class="product">
+        <img id="watch-size" src="https://m.media-amazon.com/images/I/61wRXG-flwL._AC_UY327_FMwebp_QL65_.jpg" alt="Related Product 2">
+        <p>Related Product 2</p>
+      </div>
+      <div class="product">
+        <img id="watch-size" src="https://m.media-amazon.com/images/I/61GakCpR4nL._AC_SY200_.jpg" alt="Related Product 3">
+        <p>Related Product 3</p>
+      </div>
+      <div class="product">
+        <img id="watch-size" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqGiizh18U7SH4ESW9m9FsXMCacLOxQ0x4jQ&s" alt="Related Product 2">
+        <p>Related Product 4</p>
+      </div>
+      <div class="product">
+        <img id="watch-size" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGnbMnOWvaiCBG7knjE3SufSNvNyHztq9pLw&s" alt="Related Product 2">
+        <p>Related Product 5</p>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>

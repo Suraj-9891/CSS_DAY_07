@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling body */
+        body {
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+
+        /* Nested Selector */
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Further nesting: styling <p> tags inside a .container within an <article> */
+        .container article p {
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Attribute Selector */
+        [type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        [type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        [type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Attribute Selector for placeholder styling (supported in most modern browsers) */
+        input[type="text"]::placeholder {
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Universal Selector and Nested Selector Usage -->
+    <div class="container">
+        <h1>Welcome to the CSS Selector Demo Page</h1>
+        <p>This example demonstrates the use of the universal, nested, and attribute selectors.</p>
+        
+        <!-- Nested Selector within the container -->
+        <article>
+            <p>This paragraph is inside an article element, styled differently with nested selectors.</p>
+        </article>
+
+        <!-- Attribute Selector -->
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>

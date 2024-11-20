@@ -1,0 +1,63 @@
+      /* Container to align the boxes in a horizontal line */
+      .container {
+        display: flex;
+        gap: 1cm; /* 1cm gap between boxes */
+        position: fixed;
+        top: 60px; /* Position all boxes at the same vertical level */
+        left: 90px; /* Starting point from the left */
+        display: flex;
+        flex-wrap: wrap;
+        max-width: calc(3 * 150px + 2 * 1cm); /* Adjust width for 3 boxes plus gaps */
+        gap: 1cm;
+    }
+      .container-2{
+        display: flex;
+        gap: 1cm; /* 1cm gap between boxes */
+        position: fixed;
+        top: 60px; /* Position all boxes at the same vertical level */
+        left: 90px; /* Starting point from the left */
+    }
+
+
+.Box1{
+    border: 2px solid black;
+    width: 150px;
+    height: 180px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 35px;
+    display: flex;           /* Use flexbox for centering */
+    align-items: center;     /* Center text vertically */
+    justify-content: center;
+    font-weight: bold;       /* Make text bold */
+    margin: 20px auto;
+    padding:  20px;
+    background-image: linear-gradient(Pink, rgb(232, 204, 229),rgb(18, 234, 230));
+    /* Right side direction */
+    /* background-image: linear-gradient(to right Pink, blue); */
+    /* left side direction */
+    /* background-image: linear-gradient(to left Pink, blue); */
+    /* button side direction */
+    /* background-image: linear-gradient(to bottom Pink, blue);  */
+    /* rgb side direction */
+    /* background-image: linear-gradient( rgb(214, 208, 22), blue, rgb(15, 239, 15));
+    background-image: linear-gradient(210deg rgb(214, 208, 22), blue, rgb(15, 239, 15)); */
+}
+
+    .Box2{
+        border: 2px solid black;
+        width: 150px;
+        height: 180px;
+        font-size: 40px;
+        text-align: center;
+        border-radius: 35px;
+        display: flex;           /* Use flexbox for centering */
+        align-items: center;     /* Center text vertically */
+        justify-content: center;
+        font-weight: bold;       /* Make text bold */
+        margin: 20px auto;
+        padding:  20px;
+        background-image: linear-gradient(Pink, rgb(232, 204, 229),rgb(18, 234, 230));
+
+
+    }
